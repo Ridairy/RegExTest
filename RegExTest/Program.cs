@@ -23,14 +23,12 @@ namespace RegExTest
             }
             Regex reg = new Regex(pattern);
             MatchCollection matches = reg.Matches(htmlCode);
-            if (matches.Count > 0)
-            {
                 foreach(Match m in matches)
                 {
                     Console.WriteLine(m.Value);
                 }
                 Console.WriteLine(matches.Count);
-            }
+            { };
             Console.ReadKey();
  
         }
